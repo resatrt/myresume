@@ -59,7 +59,6 @@ import Aside from '@/components/Aside.vue';
 import Experience from '@/components/Experience.vue';
 import Layout from '@/components/Layout.vue';
 
-
 @Component({
   components: {Layout, Experience, Aside}
 })

@@ -1,5 +1,5 @@
 <template>
-  <div :class="phone?'exWrapper phone':'exWrapper' ">
+  <div :class="phone?'exWrapperPhone':'exWrapper' ">
     <main class="main">
       <span>项目经验</span>
       <section class="section1">
@@ -106,7 +106,7 @@ export default class Experience extends Vue {
 </script>
 
 <style lang='scss' scoped>
-.exWrapper.phone {
+.exWrapperPhone {
   padding-top: 16px;
 
   > .main {
@@ -228,7 +228,7 @@ export default class Experience extends Vue {
 
   > .main {
     overflow: hidden;
-    padding: 0 1rem;
+    padding: 0 10px;
 
     > span {
       font-size: 20px;
