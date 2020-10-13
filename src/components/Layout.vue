@@ -23,7 +23,7 @@ export default class Layout extends Vue {
   background: darken(gray, 5%);
   z-index: 100;
   overflow: hidden;
-  color: white;
+  color: #45A3DE;
   position: fixed;
   width: 100%;
 
@@ -32,9 +32,9 @@ export default class Layout extends Vue {
 .iphone {
   text-align: center;
   padding: 8px 0;
-  background: darken(gray, 5%);
+  background: #d4d3d1;
   overflow: hidden;
-  color: white;
+  color: #45A3DE;
   position: fixed;
   width: 100%;
   z-index: 100;

@@ -1,5 +1,5 @@
 <template>
-  <div id="test" class="asideWrapper">
+  <div id="test" :class="choice?'newPhone':'asideWrapper'">
     <div class="base">
       <Box class="pictureBox box">
         <div class="picture">
@@ -33,7 +33,7 @@
           </div>
         </div>
       </Box>
-      <Experience v-show="choice"  phone="true"/>
+      <Experience v-show="choice" phone="true"/>
     </div>
   </div>
 </template>
@@ -53,10 +53,10 @@ export default class Aside extends Vue {
 
   mounted() {
     if (this.choice) {
-       this.$nextTick(function (){
-      document.getElementById('test')?.classList.add('newPhone')
-         document.getElementById('test')?.classList.remove('asideWrapper')
-       })
+      this.$nextTick(function () {
+        document.getElementById('test')?.classList.add('newPhone');
+        document.getElementById('test')?.classList.remove('asideWrapper');
+      });
     }
   }
 }
@@ -67,15 +67,15 @@ export default class Aside extends Vue {
 .asideWrapper {
   padding: 12px;
 
-  & > .base > .box > div > span {
+  > .base > .box > div > span {
     padding-right: 12px;
   }
 
-  & > .base > .box > div > .space {
+  > .base > .box > div > .space {
     padding-left: 72px;
   }
 
-  & > .base > .pictureBox > .picture {
+  > .base > .pictureBox > .picture {
     background: no-repeat center/80% url("../../public/img/背景的副本.png");
     width: 13vw;
     height: 13vw;
@@ -83,9 +83,11 @@ export default class Aside extends Vue {
     margin: 0 auto;
   }
 
-  & > .base > .box > div > div {
+  > .base > .box > div > div {
     display: flex;
     align-items: center;
+    padding-top: 5px;
+
     > svg {
       width: 35px;
       height: 35px;
@@ -98,9 +100,9 @@ export default class Aside extends Vue {
     }
 
   }
-  & > .base > .box > .svgWrapper {
-    display: flex;
-    flex-direction: column;
+
+  > .base > .box > .svgWrapper {
+    padding: 5px;
   }
 }
 
@@ -112,52 +114,62 @@ export default class Aside extends Vue {
   overflow: hidden;
 }
 
-  .newPhone {
-    padding: 67px 1rem 0 1rem;
-    & > .base > .box > div > span {
-      padding-right: 16px;
+.newPhone {
+  padding: 67px 1rem 0 1rem;
+
+  > .base > .box > div > span {
+    padding-right: 16px;
+  }
+
+  > .base > .box > .picture {
+    margin-left: 20px;
+  }
+
+  > .base > .box > div > span:nth-child(13) {
+    padding-left: 72px;
+  }
+
+  > .base > .box > div > span:nth-child(15) {
+    padding-left: 72px;
+  }
+
+  > .base > .box > div > span:nth-child(17) {
+    padding-left: 72px;
+  }
+
+  > .base > .pictureBox > .picture {
+    background: no-repeat center/80% url("../../public/img/背景的副本.png");
+    width: 30vw;
+    height: 30vw;
+    border-radius: 50%;
+    margin: 0 auto;
+  }
+
+  > .base > .box > div > div {
+    display: flex;
+    align-items: center;
+    padding-top: 5px;
+
+    > svg {
+      width: 35px;
+      height: 35px;
+      margin-right: 5px;
     }
 
-    & > .base > .box > .picture {
-      margin-left: 20px;
-    }
+    > span {
+      font-size: 18px;
+      margin-bottom: 5px;
+      top: 6px;
+      padding: 0 5px;
 
-    & > .base > .box > div > span:nth-child(13) {
-      padding-left: 72px;
-    }
-
-    & > .base > .pictureBox > .picture {
-      background: no-repeat center/80% url("../../public/img/背景的副本.png");
-      width: 30vw;
-      height: 30vw;
-      border-radius: 50%;
-      margin: 0 auto;
-    }
-
-    & > .base > .box > div > div {
-      display: flex;
-      align-items: center;
-
-      > svg {
-        width: 35px;
-        height: 35px;
-       margin-right: 5px;
-      }
-
-      > span {
-        font-size: 18px;
-        margin-bottom: 5px;
-        top: 6px;
-       padding: 0 5px;
-
-      }
-
-    }
-
-    & > .base > .box > .svgWrapper {
-      display: flex;
-      flex-direction: column;
     }
   }
+
+  > .base > .box > .svgWrapper {
+    display: flex;
+    flex-direction: column;
+
+  }
+}
 
 </style>
