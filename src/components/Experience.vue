@@ -2,7 +2,7 @@
   <div :class="phone?'exWrapperPhone':'exWrapper' ">
     <main class="main">
       <span>项目经验</span>
-      <section class="section1">
+      <section class="section">
         <h4 class="programName">灰猫记账</h4>
         <!--        <HomeSwiper choice='a'/>-->
         <SwiperContent choice="a" class="swiper"/>
@@ -23,7 +23,7 @@
           <br>
         </div>
       </section>
-      <section class="section2">
+      <section class="section">
         <h4 class="programName"> 酷图 </h4>
 
         <SwiperContent choice="b"/>
@@ -44,7 +44,7 @@
           <br>
         </div>
       </section>
-      <section class="section3">
+      <section class="section pika">
         <h4 class="programName">皮卡丘</h4>
         <img src="../assets/images/9.png" alt="图片9"/>
         <div class="pWrapper">
@@ -120,7 +120,7 @@ export default class Experience extends Vue {
       padding-bottom: 8px;
     }
 
-    > .section1 {
+    > .section {
       border-bottom: 2px solid #d9d8d5;
       box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
       padding-top: 8px;
@@ -160,53 +160,7 @@ export default class Experience extends Vue {
     }
   }
 
-
-  .section2 {
-    border-bottom: 2px solid #d9d8d5;
-    box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
-    padding-top: 8px;
-    margin-top: 20px;
-
-    > .programName {
-      padding: 5px 0;
-    }
-
-    .programName {
-      padding: 5px 0;
-    }
-
-    .pWrapper {
-      padding-bottom: 5px;
-
-      > .title {
-        font-size: 20px;
-        font-weight: bold;
-        color: dimgray;
-
-      }
-
-      > p {
-        line-height: 27px;
-        font-size: 16px;
-
-        > .span {
-          padding-left: 2rem;
-          display: inline-block;
-        }
-
-        > span {
-          background-color: #FEE642;
-        }
-      }
-    }
-  }
-
-  .section3 {
-    padding-bottom: 5px;
-    border-bottom: 2px solid #d9d8d5;
-    box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
-    padding-top: 10px;
-    max-width: 100vw;
+  .section.pika{
 
     > img {
       max-width: 100%;
@@ -221,6 +175,16 @@ export default class Experience extends Vue {
       padding: .5rem 0;
       line-height: 28px;
     }
+    > p {
+      font-size: 20px;
+      color: #45A3DE;
+      font-family: Impact, Charcoal, sans-serif;
+      font-weight: bolder;
+      padding-bottom: 8px;
+    }
+    > .spanWrapper {
+      padding: .5rem 0;
+    }
   }
 }
 .exWrapper{
@@ -228,7 +192,7 @@ export default class Experience extends Vue {
 
   > .main {
     overflow: hidden;
-    padding: 0 10px;
+    padding: 0 1rem;
 
     > span {
       font-size: 20px;
@@ -238,7 +202,7 @@ export default class Experience extends Vue {
       padding-bottom: 8px;
     }
 
-    > .section1 {
+    > .section {
       border-bottom: 2px solid #d9d8d5;
       box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
       padding-top: 8px;
@@ -279,53 +243,8 @@ export default class Experience extends Vue {
   }
 
 
-  .section2 {
-    border-bottom: 2px solid #d9d8d5;
-    box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
-    padding-top: 8px;
-    margin-top: 20px;
 
-    > .programName {
-      padding: 5px 0;
-    }
-
-    .programName {
-      padding: 5px 0;
-    }
-
-    .pWrapper {
-      padding-bottom: 5px;
-
-      > .title {
-        font-size: 20px;
-        font-weight: bold;
-        color: dimgray;
-
-      }
-
-      > p {
-        line-height: 27px;
-        font-size: 16px;
-
-        > .span {
-          padding-left: 2rem;
-          display: inline-block;
-        }
-
-        > span {
-          background-color: #FEE642;
-        }
-      }
-    }
-  }
-
-  .section3 {
-    padding-bottom: 5px;
-    border-bottom: 2px solid #d9d8d5;
-    box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
-    padding-top: 10px;
-    max-width: 100vw;
-
+  .section.pika {
     > img {
       max-width: 100%;
     }

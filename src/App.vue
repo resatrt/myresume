@@ -16,6 +16,7 @@
 #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   min-height: 100vh;
+  width: 100vw;
 }
 
 @import "reset";
@@ -23,7 +24,7 @@
   display: flex;
   //flex-shrink: 1;
   > .aside {
-    width: 27vw;
+    width: 27%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -37,7 +38,7 @@
 
   > .experience {
     border-left: 2px solid rgba(168, 167, 161, 0.91);
-    width: 73vw;
+    max-width: 73%;
     margin-left: 27vw;
     margin-top: 58px;
 
@@ -67,7 +68,7 @@ export default class App extends Vue {
   screenWidth = document.body.clientWidth;
 
   mounted() {
-    if (this.screenWidth > 500) {
+    if (this.screenWidth > 800) {
       this.phone = false;
     }
 

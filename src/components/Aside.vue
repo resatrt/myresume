@@ -68,7 +68,7 @@ export default class Aside extends Vue {
   padding: 12px;
 
   & > .base > .box > div > span {
-    padding-right: 16px;
+    padding-right: 12px;
   }
 
   & > .base > .box > div > .space {
@@ -113,7 +113,7 @@ export default class Aside extends Vue {
 }
 
   .newPhone {
-    padding: 67px 10px 0 10px;
+    padding: 67px 1rem 0 1rem;
     & > .base > .box > div > span {
       padding-right: 16px;
     }
