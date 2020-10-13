@@ -31,13 +31,13 @@
 
 <script lang='js'>
 
-import {Swiper, SwiperSlide} from 'vue-awesome-swiper';
+import {swiper, swiperSlide} from 'vue-awesome-swiper';
 import 'swiper/css/swiper.css';
 
 export default {
   components: {
-    Swiper,
-    SwiperSlide
+    swiper,
+    swiperSlide
   },
   props: ['choice'],
 

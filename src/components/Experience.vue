@@ -5,7 +5,7 @@
       <section class="section1">
         <h4 class="programName">灰猫记账</h4>
         <!--        <HomeSwiper choice='a'/>-->
-        <Swiper choice="a"/>
+        <SwiperContent choice="a" class="swiper"/>
         <div class="pWrapper">
           <span class="title">项目介绍</span><span class="title">:</span><br>
           <p><span class="span"></span> 使用Vue实现了一个本地记账功能的项目，包含 <span>记账</span> 、<span>标签</span>、<span>统计</span>等页面，实现了
@@ -25,8 +25,8 @@
       </section>
       <section class="section2">
         <h4 class="programName"> 酷图 </h4>
-        <!--        <HomeSwiper choice='b'/>-->
-        <Swiper choice="b"/>
+
+        <SwiperContent choice="b"/>
         <div class="pWrapper">
           <span class="title">项目介绍</span><span class="title">:</span><br>
           <p><span class="span"></span> 使用React脚手架快速搭建的一个ajax异步请求，使用 <span>Axios插件</span> 与mock api
@@ -94,14 +94,13 @@
 <script lang='ts'>
 import Vue from 'vue';
 import {Component, Prop} from 'vue-property-decorator';
-import Swiper from '@/components/Swiper.vue';
+import SwiperContent from '@/components/SwiperContent.vue';
 
 @Component({
-  components: {Swiper}
+  components: {SwiperContent}
 })
 
-
-export default class Content extends Vue {
+export default class Experience extends Vue {
   @Prop() phone?: boolean;
 }
 </script>
@@ -126,6 +125,123 @@ export default class Content extends Vue {
       box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
       padding-top: 8px;
 
+      > span {
+        padding: 8px 0;
+      }
+
+      .programName {
+        padding: 5px 0;
+      }
+
+      .pWrapper {
+        padding-bottom: 5px;
+
+        > .title {
+          font-size: 20px;
+          font-weight: bold;
+          color: dimgray;
+
+        }
+
+        > p {
+          line-height: 27px;
+          font-size: 16px;
+
+          > .span {
+            padding-left: 2rem;
+            display: inline-block;
+          }
+
+          > span {
+            background-color: #FEE642;
+          }
+        }
+      }
+    }
+  }
+
+
+  .section2 {
+    border-bottom: 2px solid #d9d8d5;
+    box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
+    padding-top: 8px;
+    margin-top: 20px;
+
+    > .programName {
+      padding: 5px 0;
+    }
+
+    .programName {
+      padding: 5px 0;
+    }
+
+    .pWrapper {
+      padding-bottom: 5px;
+
+      > .title {
+        font-size: 20px;
+        font-weight: bold;
+        color: dimgray;
+
+      }
+
+      > p {
+        line-height: 27px;
+        font-size: 16px;
+
+        > .span {
+          padding-left: 2rem;
+          display: inline-block;
+        }
+
+        > span {
+          background-color: #FEE642;
+        }
+      }
+    }
+  }
+
+  .section3 {
+    padding-bottom: 5px;
+    border-bottom: 2px solid #d9d8d5;
+    box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
+    padding-top: 10px;
+    max-width: 100vw;
+
+    > img {
+      max-width: 100%;
+    }
+  }
+
+  .section4 {
+    padding-top: 13px;
+    max-width: 100vw;
+
+    > .spanWrapper {
+      padding: .5rem 0;
+      line-height: 28px;
+    }
+  }
+}
+.exWrapper{
+  padding-top: 16px;
+
+  > .main {
+    overflow: hidden;
+    padding: 0 1rem;
+
+    > span {
+      font-size: 20px;
+      color: #45A3DE;
+      font-family: Impact, Charcoal, sans-serif;
+      font-weight: bolder;
+      padding-bottom: 8px;
+    }
+
+    > .section1 {
+      border-bottom: 2px solid #d9d8d5;
+      box-shadow: 0 6px 2px -3px rgba(168, 167, 161, 0.91);
+      padding-top: 8px;
 
       > span {
         padding: 8px 0;

@@ -54,7 +54,8 @@ export default class Aside extends Vue {
   mounted() {
     if (this.choice) {
        this.$nextTick(function (){
-      document.getElementById('test')?.classList.add('phone')
+      document.getElementById('test')?.classList.add('newPhone')
+         document.getElementById('test')?.classList.remove('asideWrapper')
        })
     }
   }
@@ -76,9 +77,10 @@ export default class Aside extends Vue {
 
   & > .base > .pictureBox > .picture {
     background: no-repeat center/80% url("../../public/img/背景的副本.png");
-    width: 20vw;
-    height: 20vw;
+    width: 13vw;
+    height: 13vw;
     border-radius: 50%;
+    margin: 0 auto;
   }
 
   & > .base > .box > div > div {
@@ -110,8 +112,8 @@ export default class Aside extends Vue {
   overflow: hidden;
 }
 
-  .asideWrapper.phone {
-
+  .newPhone {
+    padding: 67px 10px;
     & > .base > .box > div > span {
       padding-right: 16px;
     }

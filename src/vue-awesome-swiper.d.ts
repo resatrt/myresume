@@ -7,9 +7,8 @@ declare module 'vue-awesome-swiper' {
 
   export const install: PluginObject<SwiperOptions>
 
-  export class Swiper extends Vue {
+  export class swiper extends Vue {
     swiper: SwiperClass
   }
-
-  export class SwiperSlide extends Vue {}
+  export class swiperSlide extends Vue {}
 }

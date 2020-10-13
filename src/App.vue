@@ -1,13 +1,14 @@
 <template>
   <div id="app">
-    <h1>个人简历</h1>
-    <div v-if="phone" class="phoneWrapper">
-      <Aside :choice="phone"/>
-    </div>
-    <div v-else class="wrapper">
-      <Aside class="aside"/>
-      <Experience class="experience"/>
-    </div>
+    <Layout :choice="phone" >
+      <div v-if="phone" class="phoneWrapper">
+        <Aside :choice="phone"/>
+      </div>
+      <div v-else class="wrapper">
+        <Aside class="aside"/>
+        <Experience class="experience"/>
+      </div>
+    </Layout>
   </div>
 </template>
 
@@ -21,24 +22,26 @@
 .wrapper {
   display: flex;
   //flex-shrink: 1;
-  & > .aside {
+  > .aside {
     width: 27vw;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
     overflow: scroll;
+    position: fixed;
+    top: 58px;
+    left: 0;
+
   }
 
-  & > .experience {
+  > .experience {
     border-left: 2px solid rgba(168, 167, 161, 0.91);
     width: 73vw;
-  }
-}
+    margin-left: 27vw;
+    margin-top: 58px;
 
-h1 {
-  text-align: center;
-  padding: 8px 0 0 0;
+  }
 }
 
 .phoneWrapper {
@@ -54,10 +57,11 @@ import Vue from 'vue';
 import {Component} from 'vue-property-decorator';
 import Aside from '@/components/Aside.vue';
 import Experience from '@/components/Experience.vue';
+import Layout from '@/components/Layout.vue';
 
 
 @Component({
-  components: {Experience, Aside}
+  components: {Layout, Experience, Aside}
 })
 export default class App extends Vue {
   phone = true;
