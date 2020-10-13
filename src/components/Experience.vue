@@ -107,7 +107,7 @@ export default class Experience extends Vue {
 
 <style lang='scss' scoped>
 .exWrapperPhone {
-  padding-top: 16px;
+  padding: 16px 0;
 
   > .main {
     overflow: hidden;
@@ -224,7 +224,7 @@ export default class Experience extends Vue {
   }
 }
 .exWrapper{
-  padding-top: 16px;
+  padding: 16px 0;
 
   > .main {
     overflow: hidden;
@@ -334,7 +334,13 @@ export default class Experience extends Vue {
   .section4 {
     padding-top: 13px;
     max-width: 100vw;
-
+    > p {
+      font-size: 20px;
+      color: #45A3DE;
+      font-family: Impact, Charcoal, sans-serif;
+      font-weight: bolder;
+      padding-bottom: 8px;
+    }
     > .spanWrapper {
       padding: .5rem 0;
     }
