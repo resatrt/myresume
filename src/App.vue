@@ -21,15 +21,13 @@
 
 @import "reset";
 .wrapper {
-  display: flex;
-  //flex-shrink: 1;
+
   > .aside {
-    width: 27%;
+    width: 32%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     min-height: 100vh;
-    overflow: scroll;
     position: fixed;
     top: 58px;
     left: 0;
@@ -38,10 +36,10 @@
 
   > .experience {
     border-left: 2px solid rgba(168, 167, 161, 0.91);
-    max-width: 73%;
-    margin-left: 27vw;
+    max-width: 60%;
+    margin-left: 32vw;
     margin-top: 58px;
-
+    padding-right: 12vw;
   }
 }
 

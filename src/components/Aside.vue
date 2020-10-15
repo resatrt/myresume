@@ -9,10 +9,10 @@
         <div>
           <span>姓名</span><span>:</span><span>江大河</span> <br>
           <span>性别</span><span>:</span><span>男</span> <br>
-          <span>学历</span><span>:</span><span>大专/十堰职业技术学院</span><br>
-          <span class="space">毕业时间 ：2012年</span><br>
-          <span class="space">本科/华中农业大学</span><br>
-          <span class="space">毕业时间 ：2019年</span>
+          <span>学历</span><span>:</span><span>大专 —— 十堰职业技术学院</span><br>
+          <span class="space">毕业时间 ： 2012年</span><br>
+          <span class="space">本科 —— 华中农业大学</span><br>
+          <span class="space">毕业时间 ： 2019年</span>
         </div>
       </Box>
       <Box field-name="联系方式" class="box">
@@ -52,12 +52,12 @@ export default class Aside extends Vue {
   @Prop() choice!: boolean;
 
   mounted() {
-    if (this.choice) {
-      this.$nextTick(function () {
-        document.getElementById('test')?.classList.add('newPhone');
-        document.getElementById('test')?.classList.remove('asideWrapper');
-      });
-    }
+    // if (this.choice) {
+    //   this.$nextTick(function () {
+    //     document.getElementById('test')?.classList.add('newPhone');
+    //     document.getElementById('test')?.classList.remove('asideWrapper');
+    //   });
+    // }
   }
 }
 

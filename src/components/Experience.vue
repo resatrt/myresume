@@ -110,7 +110,7 @@ export default class Experience extends Vue {
   padding: 16px 0;
 
   > .main {
-    overflow: hidden;
+    overflow: auto;
 
     > span {
       font-size: 20px;
@@ -191,7 +191,7 @@ export default class Experience extends Vue {
   padding: 16px 0;
 
   > .main {
-    overflow: hidden;
+    overflow: auto;
     padding: 0 1rem;
 
     > span {
