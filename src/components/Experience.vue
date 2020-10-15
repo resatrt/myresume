@@ -56,8 +56,8 @@
             https://github.com/resatrt/Pikachu</a>
           <br>
           <span class="title">项目预览</span><span class="title">:</span><br>
-          <a href="http://great-rivers.gitee.io/vue-first-program-website"
-             target="_blank">http://great-rivers.gitee.io/vue-first-program-website </a>
+          <a href="http://great-rivers.gitee.io/pikachu/"
+             target="_blank">http://great-rivers.gitee.io/pikachu/ </a>
           <br>
         </div>
       </section>
