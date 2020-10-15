@@ -20,7 +20,7 @@ export default class Layout extends Vue {
 .pc {
   text-align: center;
   padding: 8px 0 0 0;
-  background: darken(gray, 5%);
+  background: #d4d3d1;
   z-index: 100;
   overflow: hidden;
   color: #45A3DE;

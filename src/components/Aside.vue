@@ -89,7 +89,7 @@ export default class Aside extends Vue {
     padding-top: 5px;
 
     > svg {
-      width: 35px;
+      width: 30px;
       height: 35px;
     }
 
@@ -107,7 +107,7 @@ export default class Aside extends Vue {
 }
 
 .icon {
-  width: 1em;
+  width: 2em;
   height: 1em;
   vertical-align: -0.15em;
   fill: currentColor;
@@ -151,8 +151,8 @@ export default class Aside extends Vue {
     padding-top: 5px;
 
     > svg {
-      width: 35px;
-      height: 35px;
+      width: 30px;
+      height: 25px;
       margin-right: 5px;
     }
 

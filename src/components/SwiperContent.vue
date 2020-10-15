@@ -75,8 +75,8 @@ export default {
 
 <style lang="scss">
 .my-bullet {
-  width: 1.3rem;
-  height: 1.3rem;
+  width: 1.1rem;
+  height: 1.1rem;
   display: inline-block;
   border-radius: 50%;
   background: #B7B6B9;
