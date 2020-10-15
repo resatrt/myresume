@@ -140,7 +140,6 @@ export default class Aside extends Vue {
     background: no-repeat center/80% url("../../public/img/背景的副本.png");
     width: 30vw;
     height: 30vw;
-    border-radius: 50%;
     margin: 0 auto;
   }
 
