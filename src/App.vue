@@ -39,7 +39,7 @@
     max-width: 60%;
     margin-left: 32vw;
     margin-top: 58px;
-    padding-right: 12vw;
+    padding-right: 11vw;
   }
 }
 

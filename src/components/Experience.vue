@@ -12,7 +12,7 @@
             <span>添加/删除记录</span> 、<span>标签</span>，<span>分类统计</span>和<span>图表显示</span>等功能。以VueCLI创建项目模板，Vuex实现全局数据状态管理，使用Vue-Router进行前端路由切换及传参，echarts插件实现数据可视化。
           </p>
           <span class="title"> 技术栈</span><span class="title">:</span><br>
-          <span> VueCLI/vue2/Vuex/Vue-Router/ES6/SCSS/TypeScript</span><br>
+          <span> VueCLI/vue2/Vuex/Vue-Router/ES6/SCSS/TypeScript/echarts</span><br>
           <span class="title"> 项目源码</span><span class="title">:</span><br>
           <a href="https://github.com/resatrt/vue-first-program" target="_blank">
             https://github.com/resatrt/vue-first-program</a>
@@ -62,6 +62,16 @@
         </div>
       </section>
       <section class="section4">
+        <p>专业技能</p>
+        <ul>
+          <li>熟悉JavaScript,了解TypeScript,熟悉ES6常用语法</li>
+          <li>熟悉使用Vue-Cli快速开发项目，了解Vuex/Vue-router/Axios等Vue全家桶</li>
+          <li>了解前端工程化，了解Webpack</li>
+          <li>了解SCSS</li>
+
+        </ul>
+      </section>
+      <section class="section5">
         <p>工作经历</p>
         <div class="spanWrapper">
           <span>时间：2016-5 —— 2017-6</span><br>
@@ -160,7 +170,7 @@ export default class Experience extends Vue {
     }
   }
 
-  .section.pika{
+  .section.pika {
 
     > img {
       max-width: 100%;
@@ -175,6 +185,7 @@ export default class Experience extends Vue {
       padding: .5rem 0;
       line-height: 28px;
     }
+
     > p {
       font-size: 20px;
       color: #45A3DE;
@@ -182,12 +193,14 @@ export default class Experience extends Vue {
       font-weight: bolder;
       padding-bottom: 8px;
     }
+
     > .spanWrapper {
       padding: .5rem 0;
     }
   }
 }
-.exWrapper{
+
+.exWrapper {
   padding: 16px 0;
 
   > .main {
@@ -242,8 +255,6 @@ export default class Experience extends Vue {
     }
   }
 
-
-
   .section.pika {
     > img {
       max-width: 100%;
@@ -251,8 +262,8 @@ export default class Experience extends Vue {
   }
 
   .section4 {
-    padding-top: 13px;
-    max-width: 100vw;
+    padding-top: 13px ;
+    padding-left: 10px;
     > p {
       font-size: 20px;
       color: #45A3DE;
@@ -260,6 +271,23 @@ export default class Experience extends Vue {
       font-weight: bolder;
       padding-bottom: 8px;
     }
+    >ul>li{
+      list-style: disc outside none;
+    }
+  }
+
+  .section5 {
+    padding-top: 13px;
+    max-width: 100vw;
+
+    > p {
+      font-size: 20px;
+      color: #45A3DE;
+      font-family: Impact, Charcoal, sans-serif;
+      font-weight: bolder;
+      padding-bottom: 8px;
+    }
+
     > .spanWrapper {
       padding: .5rem 0;
     }
