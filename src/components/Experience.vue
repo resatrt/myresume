@@ -68,7 +68,6 @@
           <li>熟悉使用Vue-Cli快速开发项目，了解Vuex/Vue-router/Axios等Vue全家桶</li>
           <li>了解前端工程化，了解Webpack</li>
           <li>了解SCSS</li>
-
         </ul>
       </section>
       <section class="section5">
@@ -179,6 +178,24 @@ export default class Experience extends Vue {
 
   .section4 {
     padding-top: 13px;
+    padding-left: 10px;
+
+    > p {
+      font-size: 20px;
+      color: #45A3DE;
+      font-family: Impact, Charcoal, sans-serif;
+      font-weight: bolder;
+      padding-bottom: 8px;
+    }
+
+    > ul > li {
+      list-style: disc outside none;
+      margin-left: 1rem;
+    }
+  }
+
+  .section5 {
+    padding-top: 13px;
     max-width: 100vw;
 
     > .spanWrapper {
@@ -262,8 +279,9 @@ export default class Experience extends Vue {
   }
 
   .section4 {
-    padding-top: 13px ;
+    padding-top: 13px;
     padding-left: 10px;
+
     > p {
       font-size: 20px;
       color: #45A3DE;
@@ -271,7 +289,8 @@ export default class Experience extends Vue {
       font-weight: bolder;
       padding-bottom: 8px;
     }
-    >ul>li{
+
+    > ul > li {
       list-style: disc outside none;
     }
   }
