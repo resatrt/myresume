@@ -64,7 +64,7 @@
       <section class="section4">
         <p>专业技能</p>
         <ul>
-          <li>熟悉JavaScript,了解TypeScript,熟悉ES6常用语法</li>
+          <li>熟悉HTML,CSS,JavaScript,了解TypeScript,熟悉ES6常用语法</li>
           <li>熟悉使用Vue-Cli快速开发项目，了解Vuex/Vue-router/Axios等Vue全家桶</li>
           <li>了解前端工程化，了解Webpack</li>
           <li>了解SCSS</li>
