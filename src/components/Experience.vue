@@ -3,7 +3,7 @@
     <main class="main">
       <span>项目经验</span>
       <section class="section">
-        <h4 class="programName">灰猫记账</h4>
+        <h4 class="programName">本地记账</h4>
         <!--        <HomeSwiper choice='a'/>-->
         <SwiperContent choice="a" class="swiper"/>
         <div class="pWrapper">
@@ -13,14 +13,8 @@
           </p>
           <span class="title"> 技术栈</span><span class="title">:</span><br>
           <span> VueCLI/vue2/Vuex/Vue-Router/ES6/SCSS/TypeScript/echarts</span><br>
-          <span class="title"> 项目源码</span><span class="title">:</span><br>
-          <a href="https://github.com/resatrt/vue-first-program" target="_blank">
-            https://github.com/resatrt/vue-first-program</a>
-          <br>
           <span class="title">项目预览</span><span class="title">:</span><br>
-          <a href="http://great-rivers.gitee.io/vue-first-program-website"
-             target="_blank">http://great-rivers.gitee.io/vue-first-program-website </a>
-          <br>
+          <img class="jpg"  src="../assets/images/vue.png" alt="二维码">
         </div>
       </section>
       <section class="section">
@@ -34,13 +28,8 @@
           </p>
           <span class="title"> 技术栈</span><span class="title">:</span><br>
           <span> react/hooks/react-router-dom//ES6/react-spring</span><br>
-          <span class="title"> 项目源码</span><span class="title">:</span><br>
-          <a href="https://github.com/resatrt/react-youtube-1" target="_blank">
-            https://github.com/resatrt/react-youtube-1</a>
-          <br>
           <span class="title">项目预览</span><span class="title">:</span><br>
-          <a href="http://great-rivers.gitee.io/react-youtube-1-page/#/"
-             target="_blank">http://great-rivers.gitee.io/react-youtube-1-page/#/ </a>
+          <img class="jpg"  src="../assets/images/react.png" alt="二维码">
           <br>
         </div>
       </section>
@@ -51,13 +40,8 @@
           <span class="title">项目介绍</span><span class="title">:</span><br>
           <p><span class="span"></span> 使用jQuery实现的一个简单的动态生成皮卡丘的项目
           </p>
-          <span class="title"> 项目源码</span><span class="title">:</span><br>
-          <a href="https://github.com/resatrt/Pikachu" target="_blank">
-            https://github.com/resatrt/Pikachu</a>
-          <br>
           <span class="title">项目预览</span><span class="title">:</span><br>
-          <a href="http://great-rivers.gitee.io/pikachu/"
-             target="_blank">http://great-rivers.gitee.io/pikachu/ </a>
+          <img class="jpg" src="../assets/images/pikaqiu.png" alt="二维码">
           <br>
         </div>
       </section>
@@ -115,6 +99,11 @@ export default class Experience extends Vue {
 </script>
 
 <style lang='scss' scoped>
+.jpg{
+  width: 200px;
+  height: 200px;
+}
+
 .exWrapperPhone {
   padding: 16px 0;
 
