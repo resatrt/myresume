@@ -1,10 +1,10 @@
 <template>
   <div id="test" :class="choice?'newPhone':'asideWrapper'">
     <div class="base">
-      <Box class="pictureBox box">
-        <div class="picture">
-        </div>
-      </Box>
+<!--      <Box class="pictureBox box">-->
+<!--        <div class="picture">-->
+<!--        </div>-->
+<!--      </Box>-->
       <Box field-name="基本信息" class="box">
         <div>
           <span>姓名</span><span>:</span><span>江大河</span> <br>
@@ -75,12 +75,12 @@ export default class Aside extends Vue {
     padding-left: 72px;
   }
 
-  > .base > .pictureBox > .picture {
-    background: no-repeat center/80% url("../../public/img/背景的副本.png");
-    width: 13vw;
-    height: 13vw;
-    margin: 0 auto;
-  }
+  //> .base > .pictureBox > .picture {
+  //  background: no-repeat center/80% url("../../public/img/背景的副本.png");
+  //  width: 13vw;
+  //  height: 13vw;
+  //  margin: 0 auto;
+  //}
 
   > .base > .box > div > div {
     display: flex;

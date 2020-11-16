@@ -38,12 +38,21 @@
         <img src="../assets/images/9.png" alt="图片9"/>
         <div class="pWrapper">
           <span class="title">项目介绍</span><span class="title">:</span><br>
-          <p><span class="span"></span> 使用jQuery实现的一个简单的动态生成皮卡丘的项目
+          <p><span class="span"></span> 使用jQuery和JS实现的一个简单的动态生成皮卡丘的项目
           </p>
           <span class="title">项目预览</span><span class="title">:</span><br>
           <img class="jpg" src="../assets/images/pikaqiu.png" alt="二维码">
           <br>
         </div>
+      </section>
+      <section class="section">
+        <h4 class="programName">番茄闹钟小程序</h4>
+        <div class="pWrapper">
+          <span class="title">项目介绍</span><span class="title">:</span><br>
+           <p ><span class="span"></span>使用微信开发者工具开发的一个番茄工作法的闹钟</p>
+          <img class="jpg" src="../assets/images/gh_f67f42cbc665_344的副本.jpg" alt="二维码">
+        </div>
+
       </section>
       <section class="section4">
         <p>专业技能</p>
@@ -60,24 +69,24 @@
           <span>时间：2016-5 —— 2017-6</span><br>
           <span>公司：</span><span>杭州炬华科技股份有限公司</span><br>
           <span>岗位：</span><span>技术支持工程师</span><br>
-          <span>工作内容：</span><br>
-          <span>1.负责河南省内表计、终端、协议转换器等的售后服务工作；</span><br>
-          <span>2.负责产品运行信息的收集、反馈与处置和运行故障的处理；</span><br>
-          <span>3.负责供货检测的跟踪，及时处理、反馈检测过程中出现的各种问题；</span><br>
-          <span>4.负责集中器新程序现场测试、远程测试及升级；</span><br>
-          <span>5.负责公司部门和大区经理安排的商务和其他工作。</span>
+<!--          <span>工作内容：</span><br>-->
+<!--          <span>1.负责河南省内表计、终端、协议转换器等的售后服务工作；</span><br>-->
+<!--          <span>2.负责产品运行信息的收集、反馈与处置和运行故障的处理；</span><br>-->
+<!--          <span>3.负责供货检测的跟踪，及时处理、反馈检测过程中出现的各种问题；</span><br>-->
+<!--          <span>4.负责集中器新程序现场测试、远程测试及升级；</span><br>-->
+<!--          <span>5.负责公司部门和大区经理安排的商务和其他工作。</span>-->
         </div>
         <hr class="hr">
         <div class="spanWrapper">
           <span>时间：2013-11 —— 2015-6</span><br>
           <span>公司：</span><span>北京博纳电气股份有限公司</span><br>
           <span>岗位：</span><span>技术支持工程师</span><br>
-          <span>工作内容：</span><br>
-          <span>1.负责湖北省内表计、终端等设备的售后服务工作；</span><br>
-          <span>2.负责产品运行信息的收集、反馈与处置和运行故障的处理；</span><br>
-          <span>3.负责供货检测的跟踪，及时处理、反馈检测过程中出现的各种问题；</span><br>
-          <span>4.负责集中器新程序现场测试、远程测试及升级；</span><br>
-          <span>5.负责公司部门和大区经理安排的商务和其他工作。</span>
+<!--          <span>工作内容：</span><br>-->
+<!--          <span>1.负责湖北省内表计、终端等设备的售后服务工作；</span><br>-->
+<!--          <span>2.负责产品运行信息的收集、反馈与处置和运行故障的处理；</span><br>-->
+<!--          <span>3.负责供货检测的跟踪，及时处理、反馈检测过程中出现的各种问题；</span><br>-->
+<!--          <span>4.负责集中器新程序现场测试、远程测试及升级；</span><br>-->
+<!--          <span>5.负责公司部门和大区经理安排的商务和其他工作。</span>-->
         </div>
       </section>
     </main>
